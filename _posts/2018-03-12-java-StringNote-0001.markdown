@@ -19,7 +19,7 @@ Java没有内置的字符串类型，而在标准java类库中提供了一个<u>
 <br /><br />
 每个用双引号括起来的字符串就是String的一个实例。<br />
 <i>Each quoted string is an instance of the String class.</i>
-</p>
+
 ---
 
 ### 1.Strings Are Immutable  不可变字符串 ###
@@ -36,18 +36,18 @@ PS：概念相关：变量-对象-对象的引用
 	s.equalsIgnoreCase(t)
 <p>
 “==” 只是用来确认是否放在同一个位置。若位置相同，自然相等。但相同内容的字符串的靠背可能放置在不同的位置上。<br/>
-<i> == operator only determines whether or not two strings are stored in the same location. </i>
+<i>  operator "==" only determines whether or not two strings are stored in the same location. </i>
 </p>
 ---
 ### 3.空串与Null串 ###
 空串("")是一个Java对象，有自己的串长度（0）和内容（空）。<br />
-NULL表示暂未有对象与变量相关联
+NULL表示暂未有对象与变量相关联。
 
 	if(str == null)
 	if(str ！=null &&str.length()!=0)
 
 第二行用于检查一个字符串既不是NULL也不是空串。
-PS：NULL上不能调用方法，首先查是否是NULL串。
+<br>PS：NULL上不能调用方法，首先查是否是NULL串。
 
 ---
 ### 4.StringBuffer/StringBuilder ###

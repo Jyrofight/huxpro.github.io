@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      "Servlet 与 JSP 核心编程学习笔记（一）概述"
+subtitle:   " \"Hello World, Hello Java\""
+date:       2018-03-13 13:00:00
+author:     "JyRo"
+
+catalog: true
+tags:
+    - servlet
+---
+
+### Leading
+
+   正式翻开Servlet 和JSP技术。
+	
+	如何编写产生网页的程序。
+
+
+### 1.servlet的功用
+
+Servlet是运行在Web服务器或应用服务器上的Java程序，负责连接来自Web浏览器或其他HTTP客户程序的请求和HTTP服务器上的数据库或应用程序。<br>
+功能：<br>
+1. 读取客户发送的显式数据。来自HTML表单或applet或定制的HTTP程序。<br>
+2. 读取由浏览器发送的隐式请求数据。后台的HTTP信息，包括cookie、浏览器所能识别的媒体类型和压缩模式。<br>
+3. 生成结果。数据库访问、RMI或EJB调用执行、Web服务、直接计算。<br> web浏览器与数据库不能直接进行会话。且不安全。<br>
+4. 向客户发送显式数据（文档）。Servlet和JSP会将结果包装到HTML。<br>
+5. 发送隐式的HTTP响应数据。<br>
+
+### 2.动态构建网页原因
+
+1. 网页基于客户发送的数据。
+2. 网页由频繁改编的数据导出。
+3. 网页使用了来自公司数据库或其他服务器端数据源的信息。中间层可以执行高速缓存和连接共享。
+
+### 3.Servlet 与JSP
+
+将Servlet看做是含有HTML的JAVA程序，将JSP看做是含有Java代码的HTML页面。<br>
+JSP页面会被翻译成servlet，再被编译。请求期间运行的是Servlet.
+
+面向处理的任务选择servlet，面向表示的任务选择JSP。
+
+The End of This Part.
+===
